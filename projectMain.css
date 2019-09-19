@@ -1,0 +1,138 @@
+*{
+	font-family: "SF Pro Display";
+	color: white;
+}
+ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+li{
+	float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+	background-color: #111;
+}
+img:hover{
+	width: 300;
+}
+.Box{
+	margin-left: 39%;
+	margin-top: 3%;
+	position: absolute;
+	animation-fill-mode: forwards;
+}
+.One{
+	animation-name: boxI;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Two{
+	animation-name: boxII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Three{
+	animation-name: boxIII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Four{
+	animation-name: boxIV;
+	animation-duration: 4s;
+	animation-delay: 1.5s;}
+.Five{
+	animation-name: boxV;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Six{
+	animation-name: boxVI;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Seven{
+	animation-name: boxVII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Eight{
+	animation-name: boxVIII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+@keyframes boxI{
+	from{
+		
+	}
+	to{
+		transform: translateX(-300px);
+	}
+}
+@keyframes boxII{
+	from{
+		
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+@keyframes boxIII{
+	from{
+		
+	}
+	to{
+		transform: translate(-300px,300px);
+	}
+}
+@keyframes boxIV{
+	from{
+		
+	}
+	to{
+		transform: translateY(300px);
+	}
+}
+@keyframes boxV{
+	from{
+		
+	}
+	to{
+		transform: translate(300px,300px);
+	}
+}
+@keyframes boxVI{
+	from{
+		
+	}
+	to{
+		transform: translate(-300px,600px);
+	}
+}
+@keyframes boxVII{
+	from{
+		
+	}
+	to{
+		transform: translateY(600px);
+	}
+}
+@keyframes boxVIII{
+	from{
+		
+	}
+	to{
+		transform: translate(300px,600px);
+	}
+}
