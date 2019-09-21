@@ -93,11 +93,23 @@ img:hover{
 	top: -50px;
 
 }
-.btnLogin{
-	padding: 2px 47.25px;
+input {
+	color: #121212;
+
+}
+.newUser:hover {
+	background-color: red;
+	text-decoration: underline;
+	color: blue;
+}
+input.btnLogin {
+	padding:5px;
 	color: black;
 	font-weight: bold;
-	letter-spacing: 
+}
+.btnLogin:hover {
+	background-color: #111;
+	color: white;
 }
 @keyframes boxI{
 	from{

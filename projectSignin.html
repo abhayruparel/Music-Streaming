@@ -14,25 +14,28 @@
 			<li><a href="projectSignIn.html">Sign In</a></li>
 		</ul>
 		<div class="loginbox">
-		<img src="avatar-icon-images-4.jpg" class="avatar"><br>
-		<h2 align="center">Login Here</h2>
-		<form>
-			<table class="logintable" align="center">
-				<tr>
-					<td>Username: </td>
-					<td><input type="text" name="user_name" placeholder="Enter Username"></td>
-				</tr>
-				<tr>
-					<td>Password: </td>
-					<td><input type="password" name="password" placeholder="Enter Password"></td>
-				</tr>
-				<tr>
-					<td>Submit</td>
-					<td><input type="submit" name="Submit" value="LOGIN" class="btnLogin"></td>
-				</tr>
-			</table>
-			<br><center><a href="">Forgot your Password?</a><br>
-			<a href="projectSignUp.html">New to this site? Click Here to sign up</a></center>
+			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
+			<h2 align="center">Login Here</h2>
+			<form  method="post">
+				<table class="logintable" align="center">
+					<tr>
+						<td>Username</td>
+						<td><input type="text" name="user_name" placeholder="Enter Username"></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" name="password" placeholder="Enter Password"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" name="Submit" value="LOGIN" class="btnLogin"></td>
+					</tr>
+				</table><br>
+				<span class="newUser">
+					<a href="">Forgot your Password?</a><br></span>
+				<span class="newUser">
+					<a href="projectSignUp.html">New to this site? Click Here to sign up</a>
+				</span>
 			</form>
 		</div>
 	</body>
