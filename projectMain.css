@@ -15,6 +15,9 @@ ul{
 li{
 	float: left;
 }
+li:last-child{
+	border-right: none;
+}
 li a{
     display: block;
     color: white;
@@ -22,11 +25,26 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover{
-	background-color: #111;
+li a.active{
+    display: block;
+    color: white;
+	background-color: #74EE15;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-img:hover{
-	width: 300;
+li a:hover:not(.active){
+	background-color: #111;
+	border-right: 1px solid #3D3D3D;
+	border-left: 1px solid #3D3D3D;
+}
+.welcome{
+    display: block;
+    color: white;
+	float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 .Box{
 	margin-left: 39%;
@@ -81,7 +99,7 @@ img:hover{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 25px;	
-	border: 3px solid #74ee15;
+	border: 3px solid #74EE15;
 	border-radius: 25px;
 }
 .avatar {
@@ -95,7 +113,6 @@ img:hover{
 }
 input {
 	color: #121212;
-
 }
 .newUser:hover {
 	background-color: red;
@@ -103,11 +120,26 @@ input {
 	color: blue;
 }
 input.btnLogin {
-	padding:5px;
+	padding-left: 84px;
+	padding-right: 84px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	color: black;
 	font-weight: bold;
 }
 .btnLogin:hover {
+	background-color: #111;
+	color: white;
+}
+input.btnRegister {
+	padding-left: 72px;
+	padding-right: 72px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: black;
+	font-weight: bold;
+}
+.btnRegister:hover {
 	background-color: #111;
 	color: white;
 }

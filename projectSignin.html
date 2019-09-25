@@ -4,19 +4,19 @@
 		<meta charset="utf-8">
 		<title>IP Project</title>
 		<link rel="stylesheet" type="text/css" href="projectMain.css">
-	</head>
+		</head>
 	<body bgcolor="#222222">
 		<ul>
 			<li><a href="projectMain.html">Home</a></li>
 			<li><a href="projectPopular.html">Popular</a></li>
 			<li><a href="projectGenres.html">Genres</a></li>
 			<li><a href="projectSignUp.html">Sign Up</a></li>
-			<li><a href="projectSignIn.html">Sign In</a></li>
+			<li><a class="active" href="projectSignIn.html">Sign In</a></li>
 		</ul>
 		<div class="loginbox">
 			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
 			<h2 align="center">Login Here</h2>
-			<form  method="post">
+			<form  method="post" action="projectWelcome.php">
 				<table class="logintable" align="center">
 					<tr>
 						<td>Username</td>
@@ -27,14 +27,13 @@
 						<td><input type="password" name="password" placeholder="Enter Password"></td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="submit" name="Submit" value="LOGIN" class="btnLogin"></td>
+						<td colspan="2"><input type="submit" name="Submit" value="LOGIN" class="btnLogin"></td>
 					</tr>
 				</table><br>
 				<span class="newUser">
-					<a href="">Forgot your Password?</a><br></span>
+					<a href="projectPassword.html">Forgot your Password?</a><br></span>
 				<span class="newUser">
-					<a href="projectSignUp.html">New to this site? Click Here to sign up</a></span>
+					<a href="projectSignUp.html">New to this site? Click here to sign up</a></span>
 			</form>
 		</div>
 	</body>
