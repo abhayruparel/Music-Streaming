@@ -119,9 +119,10 @@ input {
 	color: blue;
 }
 input.btnLogin {
-	padding-left: 84px;
-	padding-right: 84px;
+	padding-left: 100px;
+	padding-right: 100px;
 	padding-top: 5px;
+	float: right;
 	padding-bottom: 5px;
 	color: #121212;
 	font-weight: bold;
