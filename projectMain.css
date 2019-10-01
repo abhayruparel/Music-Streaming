@@ -20,14 +20,14 @@ li:last-child{
 }
 li a{
     display: block;
-    color: white;
+    color: #E8EAF6;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a.active{
     display: block;
-    color: white;
+    color: ##E8EAF6;
 	background-color: #74EE15;
     text-align: center;
     padding: 14px 16px;
@@ -124,12 +124,12 @@ input.btnLogin {
 	padding-right: 84px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	color: black;
+	color: #121212;
 	font-weight: bold;
 }
 .btnLogin:hover {
 	background-color: #111;
-	color: white;
+	color: #FFFFFF;
 }
 input.btnRegister {
 	padding-left: 72px;
@@ -141,7 +141,7 @@ input.btnRegister {
 }
 .btnRegister:hover {
 	background-color: #111;
-	color: white;
+	color: #FFFFFF;
 }
 @keyframes boxI{
 	from{
