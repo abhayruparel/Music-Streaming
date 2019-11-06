@@ -2,16 +2,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>IP Project</title>
+		<title>Sign In</title>
 		<link rel="stylesheet" type="text/css" href="projectMain.css">
+		<link rel="icon" href="mainIcon.png">
+		<style>
+		* {
+		color: #74EE15;
+		}
+		</style>
 		</head>
-	<body bgcolor="#222222">
+	<body bgcolor="#222222" id="bod">
 		<ul>
 			<li><a href="projectMain.html">Home</a></li>
 			<li><a href="projectPopular.html">Popular</a></li>
 			<li><a href="projectGenres.html">Genres</a></li>
 			<li><a href="projectSignUp.html">Sign Up</a></li>
 			<li><a class="active" href="projectSignIn.html">Sign In</a></li>
+			<input type="button" name="but" onclick="changeBCol();" value="DARK" class="right">
+			<input type="button" name="but1" onclick="white();" value="LIGHT" class="right">
 		</ul>
 		<div class="loginbox">
 			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
@@ -19,7 +27,7 @@
 			<form  method="post" action="projectWelcome.php">
 				<table class="logintable" align="center">
 					<tr>
-						<td>Username</td>
+						<td class="s1">Username</td>
 						<td><input type="text" name="user_name" placeholder="Enter Username"></td>
 					</tr>
 					<tr>
@@ -27,7 +35,7 @@
 						<td><input type="password" name="password" placeholder="Enter Password"></td>
 					</tr>
 					<tr>
-						<td colspan="2"><input type="submit" name="Submit" value="Login" class="btnLogin"></td>
+						<td colspan="2"><input type="submit" name="Submit" value="LOGIN" class="btnLogin"></td>
 					</tr>
 				</table><br>
 				<span class="newUser">
@@ -36,5 +44,6 @@
 					<a href="projectSignUp.html">New to this site? Click here to sign up</a></span>
 			</form>
 		</div>
+		<script src="theme.js"></script>
 	</body>
 </html>

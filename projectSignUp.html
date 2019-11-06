@@ -2,16 +2,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>IP Project</title>
+		<title>Sign Up</title>
 		<link rel="stylesheet" type="text/css" href="projectMain.css">
+		<link rel="icon" href="mainIcon.png">
+		<style>
+		* {
+		color: #74EE15;
+		}
+		</style>
 	</head>
-	<body bgcolor="#222222">
+	<body bgcolor="#222222" id="bod">
 		<ul>
 			<li><a href="projectMain.html">Home</a></li>
 			<li><a href="projectPopular.html">Popular</a></li>
 			<li><a href="projectGenres.html">Genres</a></li>
 			<li><a class="active" href="projectSignUp.html">Sign Up</a></li>
 			<li><a href="projectSignIn.html">Sign In</a></li>
+			<input type="button" name="but" onclick="changeBCol();" value="DARK" class="right">
+			<input type="button" name="but1" onclick="white();" value="LIGHT" class="right">
 		</ul>
 		<div class="loginbox">
 			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
@@ -42,5 +50,6 @@
 					<a href="projectSignin.html">Existing user? Click to sign in</a><br></span>
 			</form>
 		</div>
+		<script src="theme.js"></script>
 	</body>
 </html>

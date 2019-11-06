@@ -14,7 +14,7 @@ ul{
 }
 .right {
 	float: right;
-	margin: 10px;	
+	margin: 14px 10px 10px 1px;
 }
 li{
 	float: left;
@@ -31,7 +31,7 @@ li a{
 }
 li a.active{
     display: block;
-    color: ##E8EAF6;
+    color: #E8EAF6;
 	background-color: #74EE15;
     text-align: center;
     padding: 14px 16px;
@@ -42,6 +42,11 @@ li a:hover:not(.active){
 	border-right: 1px solid #3D3D3D;
 	border-left: 1px solid #3D3D3D;
 }
+span{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
 .welcome{
     display: block;
     color: white;
@@ -51,8 +56,8 @@ li a:hover:not(.active){
     text-decoration: none;
 }
 .Box{
-	margin-left: 39%;
-	margin-top: 3%;
+	margin-left: 40%;
+	margin-top: 1%;
 	position: absolute;
 	animation-fill-mode: forwards;
 }
@@ -138,11 +143,8 @@ input {
 	color: blue;
 }
 input.btnLogin {
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 5px;
 	float: right;
-	padding-bottom: 5px;
+	padding: 5px 85px;
 	color: #121212;
 	font-weight: bold;
 }
@@ -167,6 +169,54 @@ img.albumCover{
 }
 img.albumCover:hover{
 	opacity: 1;
+}
+.A{
+	animation-name: genreI;
+	animation-duration: 0s;
+}
+.B{
+	animation-name: genreII;
+	animation-duration: 0s;
+}
+.C{
+	animation-name: genreIII;
+	animation-duration: 0s;
+}
+.D{
+	animation-name: genreIV;
+	animation-duration: 0s;
+}
+.E{
+	animation-name: genreV;
+	animation-duration: 0s;
+}
+.F{
+	animation-name: genreVI;
+	animation-duration: 0s;
+}
+.G{
+	animation-name: genreVII;
+	animation-duration: 0s;
+}
+.H{
+	animation-name: genreVIII;
+	animation-duration: 0s;
+}
+.I{
+	animation-name: genreIX;
+	animation-duration: 0s;
+}
+.J{
+	animation-name: genreX;
+	animation-duration: 0s;
+}
+.K{
+	animation-name: genreXI;
+	animation-duration: 0s;
+}
+.L{
+	animation-name: genreXII;
+	animation-duration: 0s;
 }
 @keyframes boxI{
 	from{
@@ -249,6 +299,94 @@ img.albumCover:hover{
 	}
 }
 @keyframes boxXI{
+	from{
+		
+	}
+	to{
+		transform: translate(300px, 900px);
+	}
+}
+@keyframes genreI{
+	from{
+		
+	}
+	to{
+		transform: translateX(-300px);
+	}
+}
+@keyframes genreII{
+	from{
+		
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+@keyframes genreIII{
+	from{
+		
+	}
+	to{
+		transform: translate(-300px,300px);
+	}
+}
+@keyframes genreIV{
+	from{
+		
+	}
+	to{
+		transform: translateY(300px);
+	}
+}
+@keyframes genreV{
+	from{
+		
+	}
+	to{
+		transform: translate(300px,300px);
+	}
+}
+@keyframes genreVI{
+	from{
+		
+	}
+	to{
+		transform: translate(-300px,600px);
+	}
+}
+@keyframes genreVII{
+	from{
+		
+	}
+	to{
+		transform: translateY(600px);
+	}
+}
+@keyframes genreVIII{
+	from{
+		
+	}
+	to{
+		transform: translate(300px,600px);
+	}
+}
+@keyframes genreIX{
+	from{
+		
+	}
+	to{
+		transform: translate(-300px,900px);
+	}
+}
+@keyframes genreX{
+	from{
+		
+	}
+	to{
+		transform: translateY(900px);
+	}
+}
+@keyframes genreXI{
 	from{
 		
 	}
