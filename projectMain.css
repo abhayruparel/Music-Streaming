@@ -95,6 +95,21 @@ li a:hover:not(.active){
 	animation-duration: 4s;
 	animation-delay: 1.5s;
 }
+.Nine{
+	animation-name: boxIX;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Ten{
+	animation-name: boxX;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Eleven{
+	animation-name: boxXI;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
 .loginbox {
 	width: 320px;
 	height: 420px;
@@ -146,6 +161,12 @@ input.btnRegister {
 .btnRegister:hover {
 	background-color: #111;
 	color: #FFFFFF;
+}
+img.albumCover{
+	opacity: 0.95;
+}
+img.albumCover:hover{
+	opacity: 1;
 }
 @keyframes boxI{
 	from{
@@ -209,5 +230,29 @@ input.btnRegister {
 	}
 	to{
 		transform: translate(300px,600px);
+	}
+}
+@keyframes boxIX{
+	from{
+		
+	}
+	to{
+		transform: translate(-300px,900px);
+	}
+}
+@keyframes boxX{
+	from{
+		
+	}
+	to{
+		transform: translateY(900px);
+	}
+}
+@keyframes boxXI{
+	from{
+		
+	}
+	to{
+		transform: translate(300px, 900px);
 	}
 }
