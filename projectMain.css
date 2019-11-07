@@ -12,10 +12,6 @@ ul{
     position: sticky;
     top: 0;
 }
-.right {
-	float: right;
-	margin: 14px 10px 10px 1px;
-}
 li{
 	float: left;
 }
