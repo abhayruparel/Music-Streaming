@@ -140,24 +140,30 @@ input {
 	color: blue;
 }
 input.btnLogin {
+	border: none;
 	float: right;
-	padding: 5px 85px;
-	color: #121212;
+	color: #222222;
+	cursor: pointer;
+	padding: 5px 10px;
 	font-weight: bold;
+	background-color: #D9D9D9;
 }
 .btnLogin:hover {
-	background-color: #111;
-	color: #FFFFFF;
+	background-color: #74EE15;
+	color: #222222;
 }
 input.btnRegister {
-	width: 45%;
+	border: none;
 	float: right;
-	color: black;
+	color: #222222;
+	cursor: pointer;
+	padding: 5px 10px;
 	font-weight: bold;
+	background-color: #D9D9D9;
 }
 .btnRegister:hover {
-	background-color: #111;
-	color: #FFFFFF;
+	background-color: #74EE15;
+	color: #222222;
 }
 img.albumCover{
 	opacity: 0.95;
