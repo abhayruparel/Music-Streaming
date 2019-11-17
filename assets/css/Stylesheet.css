@@ -2,24 +2,24 @@
 /* CSS Document */
 @font-face {
     font-family: 'sf_pro_displayheavy';
-    src: url('sfprodisplay-heavy-webfont.woff2') format('woff2'),
-         url('sfprodisplay-heavy-webfont.woff') format('woff');
+    src: url('../fonts/sfprodisplay-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/sfprodisplay-heavy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'sf_pro_displaylight';
-    src: url('sfprodisplay-light_0-webfont.woff2') format('woff2'),
-         url('sfprodisplay-light_0-webfont.woff') format('woff');
+    src: url('../fonts/sfprodisplay-light_0-webfont.woff2') format('woff2'),
+         url('../fonts/sfprodisplay-light_0-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'sf_pro_displayregular';
-    src: url('sfprodisplay-regular_0-webfont.woff2') format('woff2'),
-         url('sfprodisplay-regular_0-webfont.woff') format('woff');
+    src: url('../fonts/sfprodisplay-regular_0-webfont.woff2') format('woff2'),
+         url('../fonts/sfprodisplay-regular_0-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
