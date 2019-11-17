@@ -1,0 +1,760 @@
+*{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+li{
+	float: left;
+}
+li:last-child{
+	border-right: none;
+}
+li a{
+    display: block;
+    color: #E8EAF6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a.active{
+    display: block;
+    color: #E8EAF6;
+	background-color: #60DB00;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active){
+	background-color: #111;
+	border-right: 1px solid #3D3D3D;
+	border-left: 1px solid #3D3D3D;
+}
+span{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+.welcome{
+    display: block;
+    color: white;
+	float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.Box{
+	margin-left: 39%;
+	margin-top: 1%;
+	position: absolute;
+	animation-fill-mode: forwards;
+}
+.One{
+	animation-name: boxI;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Two{
+	animation-name: boxII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Three{
+	animation-name: boxIII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Four{
+	animation-name: boxIV;
+	animation-duration: 4s;
+	animation-delay: 1.5s;}
+.Five{
+	animation-name: boxV;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Six{
+	animation-name: boxVI;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Seven{
+	animation-name: boxVII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Eight{
+	animation-name: boxVIII;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Nine{
+	animation-name: boxIX;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Ten{
+	animation-name: boxX;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.Eleven{
+	animation-name: boxXI;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+.loginbox {
+	width: 320px;
+	height: 420px;
+	margin: 65px 480px;
+	position: absolute;
+	padding: 25px;
+	border: 3px solid #60DB00;
+	border-radius: 25px;
+}
+.avatar {
+	height: 100px;
+	width: 100px;
+	border-radius: 40%;
+	position: absolute;
+	left: 140px;
+	top: -50px;
+
+}
+input {
+	color: #121212;
+}
+.newUser:hover {
+	text-decoration: underline;
+	color: blue;
+}
+input.btnLogin {
+	border: 2px solid #60DB00;
+	float: right;
+	color: #222222;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-weight: bold;
+	background-color: #D9D9D9;
+}
+.btnLogin:hover {
+	background-color: #222222;
+	color: #FFFFFF;
+}
+input.btnRegister {
+	border: 2px solid #60DB00;
+	float: right;
+	color: #222222;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-weight: bold;
+	background-color: #D9D9D9;
+}
+.btnRegister:hover {
+	background-color: #222222;
+	color: #FFFFFF;
+}
+img.albumCover{
+	opacity: 0.95;
+	border: 5px solid #222222;
+}
+img.albumCover:hover{
+	opacity: 1;
+	border: 5px solid #D9D9D9;
+}
+.A{
+	animation-name: genreI;
+	animation-duration: 0s;
+}
+.B{
+	animation-name: genreII;
+	animation-duration: 0s;
+}
+.C{
+	animation-name: genreIII;
+	animation-duration: 0s;
+}
+.D{
+	animation-name: genreIV;
+	animation-duration: 0s;
+}
+.E{
+	animation-name: genreV;
+	animation-duration: 0s;
+}
+.F{
+	animation-name: genreVI;
+	animation-duration: 0s;
+}
+.G{
+	animation-name: genreVII;
+	animation-duration: 0s;
+}
+.H{
+	animation-name: genreVIII;
+	animation-duration: 0s;
+}
+.I{
+	animation-name: genreIX;
+	animation-duration: 0s;
+}
+.J{
+	animation-name: genreX;
+	animation-duration: 0s;
+}
+.K{
+	animation-name: genreXI;
+	animation-duration: 0s;
+}
+.L{
+	animation-name: genreXII;
+	animation-duration: 0s;
+}
+.imgDiv{
+	height: 250px;
+}
+.tooltip {
+  	display: inline-block;
+  	border-bottom: 1px dotted #222222;
+}
+.tooltip .tooltiptext {
+  	visibility: hidden;
+  	width: 120px;
+  	background-color: #222222;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5px 0;
+  	position: absolute;
+  	z-index: 1;
+  	bottom: 50%;
+  	left: 50%;
+  	margin-left: -60px;
+  	opacity: 0;
+  	transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  	content: "";
+  	position: absolute;
+  	top: 100%;
+  	left: 50%;
+  	margin-left: -5px;
+  	border-width: 5px;
+  	border-style: solid;
+  	border-color: #222222 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  	visibility: visible;
+  	opacity: 1;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 36px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #60DB00;
+    animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+  	100% { transform: rotate(360deg); }
+}
+.animate-bottom {
+	position: relative;
+	animation-name: animatebottom;
+	animation-duration: 1.5s
+}
+@-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+  	to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+  	to{ bottom:0; opacity:1 }
+}
+#myDiv {
+	display: none;
+  	text-align: center;
+}
+.parallaxEffect{
+	background-color: #222222;
+	height: 630px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.homeScreen{
+	height: 100%;
+}
+.aboutDiv{
+	height: 630px; 
+	background-color: #222222;
+}
+.secondLogo{
+	height: 125px;
+}
+.mainLogo{
+	width: 150px;
+	margin-top: 7%;
+}
+.devDiv{
+	height: 630px; 
+	background-color: #D9D9D9;
+}
+.homeName{
+	font-size: 35px;
+	font-weight: normal;
+}
+.homeTag{
+	font-size: 40px;
+}
+.sectionLightHeading{
+	color: #D9D9D9;
+	font-size: 30px;
+}
+.sectionLightContent{
+	color: #D9D9D9;
+	font-size: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+.sectionDarkHeading{
+	color: #222222;
+	font-size: 30px;
+}
+.devCard{
+	background-color: #222222;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(172,172,172,0.2);
+  	max-width: 300px;
+	padding: 15px;
+	margin: 5px;
+  	color: #D9D9D9;
+	text-align: center;
+}
+.devCardTitle{
+	color: #D9D9D9;
+	font-size: 24px;
+}
+.contactDiv{
+	height: 315px; 
+	background-color: #222222;
+}
+.footerContent{
+	color: #D9D9D9;
+	margin:80px 100px 0px;
+	font-size: 18px;
+}
+.footerRight{
+	color: #D9D9D9; 
+	float: right;
+	margin-right: 100px;
+}
+.gotoPopular{
+	padding: 10px;
+	float: right;
+	font-size: 16px;
+	margin-right: 40px;
+	margin-top: 100px;
+	border: 2px solid #60DB00;
+	background-color: #222222;
+}
+.gotoPopular:hover{
+	border: 2px outset #60DB00;
+}
+#mainOverlay{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-color: rgba(172,172,172,0.95);
+	cursor: pointer;
+	text-align: center;
+}
+@keyframes boxI{
+	from{
+
+	}
+	to{
+		transform: translateX(-300px);
+	}
+}
+@keyframes boxII{
+	from{
+
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+@keyframes boxIII{
+	from{
+
+	}
+	to{
+		transform: translate(-300px,300px);
+	}
+}
+@keyframes boxIV{
+	from{
+
+	}
+	to{
+		transform: translateY(300px);
+	}
+}
+@keyframes boxV{
+	from{
+
+	}
+	to{
+		transform: translate(300px,300px);
+	}
+}
+@keyframes boxVI{
+	from{
+
+	}
+	to{
+		transform: translate(-300px,600px);
+	}
+}
+@keyframes boxVII{
+	from{
+
+	}
+	to{
+		transform: translateY(600px);
+	}
+}
+@keyframes boxVIII{
+	from{
+
+	}
+	to{
+		transform: translate(300px,600px);
+	}
+}
+@keyframes boxIX{
+	from{
+
+	}
+	to{
+		transform: translate(-300px,900px);
+	}
+}
+@keyframes boxX{
+	from{
+
+	}
+	to{
+		transform: translateY(900px);
+	}
+}
+@keyframes boxXI{
+	from{
+
+	}
+	to{
+		transform: translate(300px, 900px);
+	}
+}
+@keyframes genreI{
+	from{
+
+	}
+	to{
+		transform: translateX(-300px);
+	}
+}
+@keyframes genreII{
+	from{
+
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+@keyframes genreIII{
+	from{
+
+	}
+	to{
+		transform: translate(-300px,300px);
+	}
+}
+@keyframes genreIV{
+	from{
+
+	}
+	to{
+		transform: translateY(300px);
+	}
+}
+@keyframes genreV{
+	from{
+
+	}
+	to{
+		transform: translate(300px,300px);
+	}
+}
+@keyframes genreVI{
+	from{
+
+	}
+	to{
+		transform: translate(-300px,600px);
+	}
+}
+@keyframes genreVII{
+	from{
+
+	}
+	to{
+		transform: translateY(600px);
+	}
+}
+@keyframes genreVIII{
+	from{
+
+	}
+	to{
+		transform: translate(300px,600px);
+	}
+}
+@keyframes genreIX{
+	from{
+
+	}
+	to{
+		transform: translate(-300px,900px);
+	}
+}
+@keyframes genreX{
+	from{
+
+	}
+	to{
+		transform: translateY(900px);
+	}
+}
+@keyframes genreXI{
+	from{
+
+	}
+	to{
+		transform: translate(300px, 900px);
+	}
+}
+@media (max-width : 572px ){
+	.parallaxEffect{ height: 630px; }
+	.mainLogo{ width: 100px; margin-top: 180px; }
+	.gotoPopular{ margin-top: 230px; }
+	.homeName{ font-size: 25px; margin-top: 45px;}
+	.homeTag{ font-size: 30px; }
+	.aboutDiv{ height: 840px; }
+	.sectionLightContent{ text-align: center; width: 400px; margin: 50px 70px; }
+	.secondLogo{  height: 90px; }
+	.devDiv{ height: 1170px; }
+	.devCard{ display: block; }
+	.footerContent{ margin:80px 70px 0px; text-align: center; }
+	.footerRight{ text-align: center; margin-right: 120px;}
+	.Box{ margin-left: 200px }
+	.imgDiv{ height: 125px; }
+	@keyframes boxI{
+		from{
+
+		}
+		to{
+			transform: translateX(-150px);
+		}
+	}
+	@keyframes boxII{
+		from{
+
+		}
+		to{
+			transform: translateX(150px);
+		}
+	}
+	@keyframes boxIII{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,150px);
+		}
+	}
+	@keyframes boxIV{
+		from{
+
+		}
+		to{
+			transform: translateY(150px);
+		}
+	}
+	@keyframes boxV{
+		from{
+
+		}
+		to{
+			transform: translate(150px,150px);
+		}
+	}
+	@keyframes boxVI{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,300px);
+		}
+	}
+	@keyframes boxVII{
+		from{
+
+		}
+		to{
+			transform: translateY(300px);
+		}
+	}
+	@keyframes boxVIII{
+		from{
+
+		}
+		to{
+			transform: translate(150px,300px);
+		}
+	}
+	@keyframes boxIX{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,450px);
+		}
+	}
+	@keyframes boxX{
+		from{
+
+		}
+		to{
+			transform: translateY(450px);
+		}
+	}
+	@keyframes boxXI{
+		from{
+
+		}
+		to{
+			transform: translate(150px, 450px);
+		}
+	}
+	@keyframes genreI{
+		from{
+
+		}
+		to{
+			transform: translateX(-150px);
+		}
+	}
+	@keyframes genreII{
+		from{
+
+		}
+		to{
+			transform: translateX(150px);
+		}
+	}
+	@keyframes genreIII{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,150px);
+		}
+	}
+	@keyframes genreIV{
+		from{
+
+		}
+		to{
+			transform: translateY(150px);
+		}
+	}
+	@keyframes genreV{
+		from{
+
+		}
+		to{
+			transform: translate(150px,150px);
+		}
+	}
+	@keyframes genreVI{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,300px);
+		}
+	}
+	@keyframes genreVII{
+		from{
+
+		}
+		to{
+			transform: translateY(300px);
+		}
+	}
+	@keyframes genreVIII{
+		from{
+
+		}
+		to{
+			transform: translate(150px,300px);
+		}
+	}
+	@keyframes genreIX{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,450px);
+		}
+	}
+	@keyframes genreX{
+		from{
+
+		}
+		to{
+			transform: translateY(450px);
+		}
+	}
+	@keyframes genreXI{
+		from{
+
+		}
+		to{
+			transform: translate(150px, 450px);
+		}
+	}
+	.loginbox{ width: 320px;
+	height: 420px;
+	margin: 85px; }
+}

@@ -2,11 +2,36 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Sign In</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="icon" href="assets/images/mainIcon.png">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-		</head>
+		<title>Chord - Sign In</title>
+		<link rel="stylesheet" type="text/css" href="projectMain.css">
+		<link rel="icon" href="ChordNewVector.png">
+		<script>
+			function validateForm(){
+				var UName = document.forms["signInForm"]["user_name"].value;
+				var Password = document.forms["signInForm"]["password"].value;
+				if (UName == ""){
+					alert("Please enter your user name!");
+					return false;
+				}
+				if (Password == ""){
+					alert("Please enter your password!");
+					return false;
+				}
+			}
+			function forgotPassword(){
+				var firstEntry = prompt("Enter a password: ")
+				if (firstEntry == "")
+					alert("Please enter password!")
+				var secondEntry = prompt("Re enter your password: ")
+				if (secondEntry == "")
+					alert("Please enter password!")
+				if (firstEntry == secondEntry)
+					alert("Password changed successfully!")
+				else
+					alert("Passwords do not match")
+			}
+		</script>
+	</head>
 	<body bgcolor="#222222">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -14,12 +39,13 @@
 			<li><a href="projectGenres.html">Genres</a></li>
 			<li><a href="projectSignUp.html">Sign Up</a></li>
 			<li><a class="active" href="projectSignIn.html">Sign In</a></li>
+			<li style="float: right;"><a href="aboutUs.html">About Us</a></li>
 		</ul>
 		<div class="loginbox">
-			<img src="assets/images/avatar-icon-images-4.jpg" class="avatar"><br>
+			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
 			<h2 align="center">Login Here</h2>
-			<form  method="post" action="index.html">
-				<table class="logintable" align="center">
+			<form  method="post" name="signInForm" onSubmit="return validateForm()" action="index.html">
+				<table align="center">
 					<tr>
 						<td class="s1">Username</td>
 						<td><input type="text" name="user_name" placeholder="Enter Username"></td>
@@ -30,11 +56,11 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="submit" name="Submit" value="LOGIN" class="btnLogin"></td>
+						<td><input type="submit" name="Submit" value="LOGIN" class="btnLogin" onClick="showName()"></td>
 					</tr>
 				</table><br>
 				<span class="newUser">
-					<a href="projectPassword.html">Forgot your Password?</a><br></span>
+					<a onClick="return forgotPassword()">Forgot your Password?</a><br></span>
 				<span class="newUser">
 					<a href="projectSignUp.html">New to this site? Click here to sign up</a></span>
 			</form>

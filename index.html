@@ -1,19 +1,31 @@
 <!doctype html>
-<html>
-	<head>
+<html><head>
 		<meta charset="utf-8">
-		<title>Home</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="icon" href="assets/images/mainIcon.png">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<title>Chord - Home</title>
+		<link rel="stylesheet" type="text/css" href="projectMain.css">
+		<link rel="icon" href="ChordNewVector.png">
+		<link href="Stylesheet.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=.85">
+		<style>
+			ul{
+				margin: 10px;
+			}
+        </style>
 	</head>
-	<body bgcolor="#222222">
-		<ul>
-			<li><a class="active" href="index.html">Home</a></li>
-			<li><a href="projectPopular.html">Popular</a></li>
-			<li><a href="projectGenres.html">Genres</a></li>
-			<li><a href="projectSignUp.html">Sign Up</a></li>
-			<li><a href="projectSignIn.html">Sign In</a></li>
-		</ul>
+	<body bgcolor="#2222222" onload="addOverlay()" style="margin: 0px;">
+		<div class="homeScreen">
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="projectPopular.html">Popular</a></li>
+				<li><a href="projectGenres.html">Genres</a></li>
+				<li><a href="projectSignUp.html">Sign Up</a></li>
+				<li><a href="projectSignIn.html">Sign In</a></li>
+				<li style="float: right;"><a href="aboutUs.html">About Us</a></li>
+		  	</ul>
+		  	<center><img src="ChordNewVector.png" alt="Logo" class="mainLogo"></center>
+		  	<span class="homeName">CHORD</span>
+			<span class="homeTag">Your one stop music<br>streaming service</span>
+			<button class="gotoPopular"><a href="projectPopular.html">Ready to groove</a></button>
+		</div>
 	</body>
 </html>

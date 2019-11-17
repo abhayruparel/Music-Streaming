@@ -2,10 +2,33 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Sign Up</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="icon" href="assets/images/mainIcon.png">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<title>Chord - Sign Up</title>
+		<link rel="stylesheet" type="text/css" href="projectMain.css">
+		<link rel="icon" href="ChordNewVector.png">
+		<script>
+			function validateForm(){
+				var Name = document.forms["signUpForm"]["name"].value;
+				var Email = document.forms["signUpForm"]["user_email"].value;
+				var UName = document.forms["signUpForm"]["user_name"].value;
+				var Password = document.forms["signUpForm"]["password"].value;
+				if (Name == ""){
+					alert("Please enter your name!");
+					return false;
+				}
+				if (Email == ""){
+					alert("Please enter your email!");
+					return false;
+				}
+				if (UName == ""){
+					alert("Please enter your username!");
+					return false;
+				}
+				if (Password == ""){
+					alert("Please enter your password!");
+					return false;	
+				}
+			}
+		</script>
 	</head>
 	<body bgcolor="#222222">
 		<ul>
@@ -14,11 +37,12 @@
 			<li><a href="projectGenres.html">Genres</a></li>
 			<li><a class="active" href="projectSignUp.html">Sign Up</a></li>
 			<li><a href="projectSignIn.html">Sign In</a></li>
+			<li style="float: right;"><a href="aboutUs.html">About Us</a></li>
 		</ul>
 		<div class="loginbox">
-			<img src="assets/images/avatar-icon-images-4.jpg" class="avatar"><br>
+			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
 			<h2 align="center">Register</h2>
-			<form  method="post" action="index.html">
+			<form  method="post" name="signUpForm" action="index.html" onSubmit="return validateForm()">
 				<table class="logintable" align="center">
 					<tr>
 						<td>Name</td>
@@ -34,7 +58,7 @@
 					</tr>
 					<tr>
 						<td>Password</td>
-						<td><input type="password" name="password" placeholder="Enter Password"></td>
+						<td><input type="password" name="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
 					</tr>
 					<tr>
 						<td></td>
